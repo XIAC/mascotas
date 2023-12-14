@@ -1,0 +1,20 @@
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{persona.Nombre}}</h5>
+    <p class="card-text">{{persona.Apellido}}</p>
+    <a href="#" class="btn btn-primary">Ver Mas</a>
+  </div>
+</div>
+
+<div *ngFor="let m of mascotasList | async;">
+  <div class="card" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">{{m.Nombre}}</h5>
+      <p class="card-text">{{m.Raza}}</p>
+      <a href="#" class="btn btn-primary">Ver Mas</a>
+    </div>
+</div>
+
+</div>
